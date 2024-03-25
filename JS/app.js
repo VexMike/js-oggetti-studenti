@@ -40,12 +40,50 @@ let studenti = [
 ];
 
 // Ciclo tutti gli studenti e stampo Nome e Cognome
-// for (let i=0; i < studenti.length; i++) {
-//     const studente = studenti[i];
-//     console.log(studente.name, studente.surname);
-// }
+for (let i=0; i < studenti.length; i++) {
+    const studente = studenti[i];
+    // console.log(studente.name, studente.surname);
+}
 
 studenti.forEach (function(studenti) {
     console.log(`Nome: ${studenti.name}, Cognome: ${studenti.surname}`);
+});
+
+// L'utente inserisce Nome, Cognome ed Età con un prompt
+
+const nomeUtente = prompt('Inserisci il nome');
+// console.log(nomeUtente);
+
+const cognomeUtente = prompt('Inserisci il cognome');
+// console.log(cognomeUtente);
+
+const etaUtente = prompt('Inserisci età');
+// console.log(etaUtente);
+
+// Dati inseriti dall'utente da inserire nell'array
+
+const nuovoStudente = {
+    name: nomeUtente,
+    surname: cognomeUtente,
+    age: etaUtente
+}
+
+studenti.push(nuovoStudente);
+// console.log(nuovoStudente);
+
+// Inserisco i nuovi dati nell'array
+
+nuovoStudente[studenti];
+// console.log(studenti);
+
+// Ciclo con il nuovo studente
+
+for (let i=0; i < studenti.length; i++) {
+        const studente = studenti[i];
+        // console.log(studente.name, studente.surname, studente.age);
+    }
+
+studenti.forEach (function(studenti) {
+    console.log(`Nome: ${studenti.name}, Cognome: ${studenti.surname}, Età: ${studenti.age}`);
 });
 
